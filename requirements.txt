@@ -12,3 +12,5 @@ tzdata==2022.7
 phonenumbers==8.13.3
 django-password-validators==1.7.0
 django-sslserver==0.22
+django-phonenumber-field==7.0.2
+django-import-export==3.0.2
