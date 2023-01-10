@@ -33,6 +33,16 @@ $ python manage.py createsuperuser
 $ python manage.py runsslserver --certificate cert.pem --key key.pem 
 
 
+# Architecture:
+
+
+![image](https://user-images.githubusercontent.com/104764998/211631610-91102180-fd50-4eff-9faa-6b9bd1265c70.png)
+
+# Threat modeling:
+
+![image](https://user-images.githubusercontent.com/104764998/211631647-27d2defa-a1d0-4cb4-b590-3094c08058c4.png)
+
+
 ## Authors
 Vladimir Poplavsky https://github.com/VladimirPoplavsky \
 Shaun Suhareanu https://github.com/Botnim \
