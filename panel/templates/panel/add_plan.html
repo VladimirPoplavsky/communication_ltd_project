@@ -1,0 +1,28 @@
+{% extends 'main.html' %}
+{% block content%}
+{% load crispy_forms_tags %}
+
+<style>
+   .container{
+   background-color:#31363b;
+   color:white;
+   border-radius: 10px;
+   }
+</style>
+
+<div class="form-control">
+   <div class="container mt-4 pt-4 mb-4">
+      <form method="post">
+         {% csrf_token %}
+         {{form.plan_name|as_crispy_field}}
+         {{form.description|as_crispy_field}}
+         {{form.Duration|as_crispy_field}}
+         {{form.cost|as_crispy_field}}
+         <br>
+         <div class="d-grid gap-2 d-md-block">
+            <button type="submit" class="btn btn-outline-primary btn-lg mb-4 form-control">Submit</button>
+         </div>
+      </form>
+   </div>
+</div>
+{% endblock%}

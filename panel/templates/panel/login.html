@@ -1,0 +1,55 @@
+{% extends "main.html" %}
+{% block content %}
+
+<style>
+   #login-form {
+   background-color: #212529;
+   padding: 10px;
+   box-shadow: 10px 8px 8px 5px #17a2b8;
+   }
+</style>
+
+<div>
+   {% if form.errors %}
+   <div class="alert alert-danger alert-dismissible" role="alert">
+      <div id="form_errors">
+         {% for key, value in form.errors.items %}
+         <strong>{{ value }}</strong>
+         <strong>{{ users }}</strong>
+         {% endfor %}
+      </div>
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+      </button>
+   </div>
+   {% endif %}
+</div>
+
+<h3 class="text-center  text-white pt-5 ">Login</h3>
+<div class="container">
+   <div id="login-row" class="row justify-content-center align-items-center">
+      <div id="login-column" class="col-md-6">
+         <div id="login-box" class="col-md-12">
+            <form id="login-form" class="form-control" action="{% url 'login' %}" method="POST">
+               {% csrf_token %}
+               <div class="form-group">
+                  <label for="username" class="text-info">Username:</label><br>
+                  {{ form.username }}
+               </div>
+               <div class="form-group">
+                  <label for="password" class="text-info">Password:</label><br>
+                  {{ form.password }}
+               </div>
+               <div class="form-group">
+                  <input type="submit" class="btn btn-outline-info btn-md" value="Login">
+               </div>
+               <div class="form-group">
+                  <a class="btn btn-outline-danger my-2 my-sm-0" href="{% url 'password_reset' %}">Forgot
+                  Password</a>
+               </div>
+            </form>
+         </div>
+      </div>
+   </div>
+</div>
+{% endblock content %}
