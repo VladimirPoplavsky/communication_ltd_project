@@ -98,7 +98,9 @@
                                     <tbody>
                                     {% for plan in plans %}
                                         <tr>
-                                        <td>{{ plan.plan_name }}</td>
+                                        {% autoescape off %}
+                                        <td>{{ plan.plan_name | safe }}</td>
+                                        {% endautoescape %}
                                         <td>₪{{ plan.cost }}</td>
                                         <td>{{ plan.Duration }}</td>
                                         <td>
