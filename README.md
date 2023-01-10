@@ -1,4 +1,4 @@
-# communication_ltd_2
+# communication_ltd
 
 This site is a project created as a part of the course "Computer Security"  of HIT (Holon Institute of Technology)
 This is the web system, developed for an imaginary communication company called Communication_LTD,  sells Internet packages.
