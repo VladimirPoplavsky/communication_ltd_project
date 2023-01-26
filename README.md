@@ -22,7 +22,9 @@ $ virtualenv env
 
 
 - create superuser for admin login: \
-(env) $ python manage.py createsuperuser 
+Before using site it's necessary to create superuser for admin login:\
+(env) $ python manage.py createsuperuser\
+proceed according to instruction
 
 
 ## Running 
@@ -31,6 +33,28 @@ $ python manage.py createsuperuser
 
 - to run over HTTPS: \
 $ python manage.py runsslserver --certificate cert.pem --key key.pem 
+
+
+## Using
+
+Login with superuser credentials that was created before\
+If You forgot the password, it can be restored by email\
+![image](https://user-images.githubusercontent.com/34675746/214836681-26305c80-2a58-42d0-8673-b1ed41cf1337.png)
+
+On the top of page You can add new employees account, or change password\
+![image](https://user-images.githubusercontent.com/34675746/214838138-f29af8e5-c6ca-44af-a897-8856395294e5.png)
+
+Here You can add new internet plan\
+![image](https://user-images.githubusercontent.com/34675746/214838888-459f3804-12ab-48ad-b885-ad8429f66b95.png)
+
+![image](https://user-images.githubusercontent.com/34675746/214838970-d1703509-21f5-4d15-ada4-bea1380fa94f.png)
+
+Also can to add new customer and to assign him internet plan\
+![image](https://user-images.githubusercontent.com/34675746/214839114-a1f20395-4063-4c55-8250-fc10628ecc68.png)
+![image](https://user-images.githubusercontent.com/34675746/214840346-aed89f7b-c2a8-4df4-8ea1-8018ebb57570.png)
+
+
+
 
 
 # Architecture:
