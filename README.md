@@ -21,7 +21,7 @@ $ virtualenv env
 (env) $ python manage.py migrate 
 
 
-- create superuser for admin login: \
+- create superuser: \
 Before using site it's necessary to create superuser for admin login:\
 (env) $ python manage.py createsuperuser\
 proceed according to instruction
